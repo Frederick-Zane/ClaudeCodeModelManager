@@ -88,15 +88,15 @@ Config file: `~/.config/ccm/config.toml`
 
 ```toml
 [current]
-model = "mimo"
+model = "ClaudeSonnnet"
 
-[providers.Xiaomi]
+[providers.Anthropic]
 base_url = "https://api.example.com/anthropic"
 auth_token = "your-token-here"
 
-[models.mimo]
-provider = "Xiaomi"
-model = "mimo-v2.5-pro"
+[models.claudeSonnet]
+provider = "Athropic"
+model = "ClaudeSonnet"
 ```
 
 ## How It Works
@@ -128,7 +128,7 @@ model = "mimo-v2.5-pro"
 - **TUI 模式** - 交互式终端界面，方向键导航
 - **自动备份** - 每次修改前自动备份配置
 - **原子写入** - 安全更新配置（写临时文件 → fsync → 重命名）
-- **守护钩子** - 阻止误写正在使用的 Claude Code 配置文件
+- **守护hook** - 阻止误写正在使用的 Claude Code 配置文件
 
 ## 安装
 
@@ -204,15 +204,15 @@ ccm tui
 
 ```toml
 [current]
-model = "mimo"
+model = "ClaudeSonnnet"
 
-[providers.Xiaomi]
+[providers.Anthropic]
 base_url = "https://api.example.com/anthropic"
 auth_token = "your-token-here"
 
-[models.mimo]
-provider = "Xiaomi"
-model = "mimo-v2.5-pro"
+[models.claudeSonnet]
+provider = "Athropic"
+model = "ClaudeSonnet"
 ```
 
 ## 工作原理
@@ -226,7 +226,7 @@ model = "mimo-v2.5-pro"
 
 ## 安全机制
 
-- **守护钩子** 阻止除 `ccm use` / `ccm tui` 以外的代码路径写入 live 配置文件
+- **守护hook** 阻止除 `ccm use` / `ccm tui` 以外的代码路径写入 live 配置文件
 - **原子写入**（临时文件 → fsync → 重命名）防止崩溃时数据损坏
 - **自动备份** 在 `~/.config/ccm/backups/` 保留最近 20 个版本
 
