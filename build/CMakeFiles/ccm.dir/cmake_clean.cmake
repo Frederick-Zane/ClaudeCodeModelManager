@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/ccm.dir/src/commands/add.cpp.o"
+  "CMakeFiles/ccm.dir/src/commands/add.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/commands/current.cpp.o"
+  "CMakeFiles/ccm.dir/src/commands/current.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/commands/list.cpp.o"
+  "CMakeFiles/ccm.dir/src/commands/list.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/commands/remove.cpp.o"
+  "CMakeFiles/ccm.dir/src/commands/remove.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/commands/tui.cpp.o"
+  "CMakeFiles/ccm.dir/src/commands/tui.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/commands/use.cpp.o"
+  "CMakeFiles/ccm.dir/src/commands/use.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/config/app_config.cpp.o"
+  "CMakeFiles/ccm.dir/src/config/app_config.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/config/claude_config.cpp.o"
+  "CMakeFiles/ccm.dir/src/config/claude_config.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/config/model_registry.cpp.o"
+  "CMakeFiles/ccm.dir/src/config/model_registry.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/main.cpp.o"
+  "CMakeFiles/ccm.dir/src/main.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/providers/provider.cpp.o"
+  "CMakeFiles/ccm.dir/src/providers/provider.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/utils/atomic_write.cpp.o"
+  "CMakeFiles/ccm.dir/src/utils/atomic_write.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/utils/backup.cpp.o"
+  "CMakeFiles/ccm.dir/src/utils/backup.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/utils/fs.cpp.o"
+  "CMakeFiles/ccm.dir/src/utils/fs.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/utils/guard.cpp.o"
+  "CMakeFiles/ccm.dir/src/utils/guard.cpp.o.d"
+  "CMakeFiles/ccm.dir/src/utils/paths.cpp.o"
+  "CMakeFiles/ccm.dir/src/utils/paths.cpp.o.d"
+  "ccm"
+  "ccm.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/ccm.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,45 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(g++ --version)",
+      "Bash(cmake --version)",
+      "Bash(clang++ --version)",
+      "Bash(dpkg -l)",
+      "Bash(apt list *)",
+      "Bash(sudo apt *)",
+      "Bash(git clone *)",
+      "Bash(rm -rf /home/frederick/Project/ccm/third_party/json && git clone --depth 1 https://github.com/nlohmann/json.git 2>&1 | tail -3)",
+      "Bash(pip install *)",
+      "Bash(pip3 install *)",
+      "Read(//tmp/**)",
+      "Bash(curl -sL https://github.com/Kitware/CMake/releases/download/v3.29.3/cmake-3.29.3-linux-x86_64.tar.gz -o cmake.tar.gz)",
+      "Bash(tar xzf *)",
+      "Bash(mkdir -p ~/.local/bin)",
+      "Bash(cp /tmp/cmake-3.29.3-linux-x86_64/bin/cmake ~/.local/bin/)",
+      "Bash(cp /tmp/cmake-3.29.3-linux-x86_64/bin/ctest ~/.local/bin/)",
+      "Bash(export PATH=\"$HOME/.local/bin:$PATH\")",
+      "Bash(find /tmp/cmake-3.29.3-linux-x86_64/share/cmake-3.29 -maxdepth 1 -type d 2>&1; echo \"---\"; find ~/.local/share/cmake-3.29 -maxdepth 1 2>&1)",
+      "Read(//home/frederick/.local/share/cmake-3.29/**)",
+      "Bash(/home/frederick/Project/ccm/build/ccm --help)",
+      "Read(//home/frederick/.claude/**)",
+      "Read(//home/frederick/.config/ccm/**)",
+      "Bash(find ~/.claude -type f 2>/dev/null | head -20; echo \"===\"; find /home/frederick -name \"settings.json\" -path \"*claude*\" 2>/dev/null | head -5)",
+      "Read(//home/frederick/**)",
+      "WebSearch",
+      "Bash(claude --version)",
+      "Bash(claude config *)",
+      "Read(//usr/**)",
+      "Bash(claude settings *)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(gh api *)",
+      "Bash(python3 -c \"import json,sys,base64; d=json.load\\(sys.stdin\\); print\\(base64.b64decode\\(d['content']\\).decode\\(\\)[:3000]\\)\")",
+      "Bash(mkdir -p ~/.config/ccm)",
+      "Bash(cmake --build /home/frederick/Project/ccm/build)",
+      "Bash(/home/frederick/Project/ccm/build/ccm list *)"
+    ],
+    "additionalDirectories": [
+      "/home/frederick/Project/ccm/third_party/json",
+      "/home/frederick/.config"
+    ]
+  }
+}
